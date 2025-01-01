@@ -19,20 +19,20 @@ const Table = () => {
                                 <div>
                                     <div className="flex gap-2">
                                         <div className="text-center bg-transparent w-[95px] "></div>
-                                        <div className="text-center bg-white font-semibold max-sm:w-[85px] w-[95px] pt-6 pb-5 rounded-t-lg ms-[23px] max-sm:ms-[3px]">Rift</div>
-                                        <div className="text-center bg-white font-semibold max-sm:w-[85px] w-[95px] pt-6 pb-5 rounded-t-lg">Taxscouts</div>
-                                        <div className="text-center bg-white font-semibold max-sm:w-[85px] w-[95px] pt-6 pb-5 rounded-t-lg">Coconut</div>
-                                        <div className="text-center font-semibold bg-lightGreen w-[95px] max-sm:w-[85px] pt-6 pb-5 rounded-t-lg bg-[#56E3CB]">Pie</div>
+                                        <div className="text-center bg-white font-semibold max-sm:w-[85px] w-[95px] pt-6 pb-5 rounded-t-lg ms-[23px] max-sm:ms-[3px]"><p className='text-[13px] font-semibold'>Rift</p></div>
+                                        <div className="text-center bg-white font-semibold max-sm:w-[85px] w-[95px] pt-6 pb-5 rounded-t-lg"> <p className='text-[13px] font-semibold'>Taxscouts</p> </div>
+                                        <div className="text-center bg-white font-semibold max-sm:w-[85px] w-[95px] pt-6 pb-5 rounded-t-lg"> <p className='text-[13px] font-semibold'> Coconut</p> </div>
+                                        <div className="text-center font-semibold bg-lightGreen w-[95px] max-sm:w-[85px] pt-6 pb-5 rounded-t-lg bg-[#56E3CB]"><p className='text-[13px] font-semibold'>Pie</p></div>
                                     </div>
                                     <div className="!overflow-x-auto max-w-full">
                                         <div className="max-lg:max-w-[554px]">
                                             {COMPETITION_LIST.map((obj, i) => (
                                                 <div key={i} className="flex gap-2  border-t border-black">
-                                                    <div className={`ps-2 font-semibold  text-white border-black py-4 w-[95px] max-sm:w-[75px] ${i === 0 ? 'me-[23px] text-sm' :'me-[23px] text-sm'}`}>{obj.brand}</div>
-                                                    <div className={`text-center ${i === 5 ? 'rounded-b-lg text-[13px] font-normal h-[107px]' : ''} py-4 flex bg-white items-center justify-center max-sm:w-[85px] w-[95px]`}>{obj.rift}</div>
-                                                    <div className={`text-center ${i === 5 ? 'rounded-b-lg text-[13px] font-normal h-[107px]' : ''} py-4 bg-white flex items-center justify-center max-sm:w-[85px] w-[95px]`}>{obj.taxscout}</div>
-                                                    <div className={`text-center ${i === 5 ? 'rounded-b-lg text-[13px] font-normal h-[107px]' : ''} py-4 bg-white flex items-center justify-center max-sm:w-[85px] w-[95px]`}>{obj.coconut}</div>
-                                                    <div className={`text-center ${i === 5 ? 'rounded-b-lg text-[13px] font-normal h-[107px]' : ''} bg-lightGreen py-4 flex items-center justify-center bg-[#56E3CB] max-sm:w-[85px] w-[95px]`}>{obj.pie}</div>
+                                                    <div className={`ps-2 font-semibold  text-white border-black py-4 w-[95px] max-sm:w-[75px] ${i === 0 ? 'me-[23px] text-sm' :'me-[23px] text-sm'}`}> <p>{obj.brand}</p></div>
+                                                    <div className={`text-center ${i === 5 ? 'rounded-b-lg text-[13px] font-normal h-[107px]' : ''} py-4 flex bg-white items-center justify-center max-sm:w-[85px] w-[95px]`}> <p className='text-[13px] font-normal'>{obj.rift}</p></div>
+                                                    <div className={`text-center ${i === 5 ? 'rounded-b-lg text-[13px] font-normal h-[107px]' : ''} py-4 bg-white flex items-center justify-center max-sm:w-[85px] w-[95px]`}> <p className='text-[13px] font-normal'>{obj.taxscout}</p></div>
+                                                    <div className={`text-center ${i === 5 ? 'rounded-b-lg text-[13px] font-normal h-[107px]' : ''} py-4 bg-white flex items-center justify-center max-sm:w-[85px] w-[95px]`}> <p className='text-[13px] font-normal'>{obj.coconut}</p></div>
+                                                    <div className={`text-center ${i === 5 ? 'rounded-b-lg text-[13px] font-normal h-[107px]' : ''} bg-lightGreen py-4 flex items-center justify-center bg-[#56E3CB] max-sm:w-[85px] w-[95px]`}> <p className='text-[13px] font-normal'>{obj.pie}</p> </div>
                                                 </div>
                                             ))}
                                         </div>
